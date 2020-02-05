@@ -1,0 +1,99 @@
+{
+	"START": {
+		"name": "Your Room",
+		"desc": "You are in your tidy room. There is a PC and a Bintendo Swatch connected to the TV.",
+		"exits": [
+			{
+				"exit": "GO OUTSIDE",
+				"target": "LOCATION2"
+			}
+		]
+	}
+	,"LOCATION2": {
+		"name": "Palette Town",
+		"desc": "This is a small town with three buildings, yours, your neighbors, a patchy grass field that leaves out of town and a laboratory.",
+		"exits": [
+			{
+				"exit": "GO HOME",
+				"target": "START"
+			},{
+				"exit": "GO NEIGHBOR",
+				"target": "LOCATION3"
+			},{
+				"exit":"GO LAB",
+				"target":"LOCATION4"
+			},{
+				"exit":"LEAVE TOWN",
+				"target":"LOCATION5"
+			}
+		]
+	}
+	,"LOCATION3": {
+		"name": "Neighbor's House",
+		"desc": "This is your neighbors House, You are upstairs and there is a Toke-Square on the floor. You won't take it because it isn't yours. A note says, \"Meet me at the Tokeman lab! :)\"",
+		"exits": [
+			{
+				"exit": "GO OUTSIDE",
+				"target": "LOCATION2"
+			}
+			]
+	}
+	, "LOCATION4":{
+		"name":"Tokeman Lab",
+		"desc": "This is a Tokeman Laboratory. There is a professor standing there. He is talking to your neighbor. ",
+		"exits": [
+			{
+				"exit": "GO OUTSIDE",
+				"target": "LOCATION2"
+			}
+		]
+	},"LOCATION5": {
+		"name": "Patchy Grass",
+		"desc": "You are in a patchy grass leaving Palette Town",
+		"exits": [
+			{
+				"exit": "GO BACK",
+				"target": "LOCATION2"
+			},
+			{
+				"exit":"GO FORWARD",
+				"target":"LOCATION6"
+			}
+			]
+	},"LOCATION6": {
+		"name": "The Wild",
+		"desc": "You are in a deep into the wilderness",
+		"exits": [
+			{
+				"exit": "GO BACK",
+				"target": "LOCATION5"
+			},
+			{
+				"exit":"GO FORWARD",
+				"target":"LOCATION7"
+			}
+			]
+	},"LOCATION7": {
+		"name": "Outside Varidion City",
+		"desc": "You are right outside Varidian City",
+		"exits": [
+			{
+				"exit": "GO BACK",
+				"target": "LOCATION6"
+			},
+			{
+				"exit":"ENTER CITY",
+				"target":"LOCATION8"
+			}
+			]
+	},"LOCATION8": {
+		"name": "Varidion City",
+		"desc": "Congratulations, you made it to Varidian City",
+		"exits": [
+			{
+				"exit": "GO BACK",
+				"target": "LOCATION7"
+			}
+			]
+		}
+}
